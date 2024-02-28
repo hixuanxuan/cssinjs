@@ -500,13 +500,13 @@ export default function useStyleRegister(
     } else {
       styleNode = (
         <style
-        {...{
-          [ATTR_TOKEN]: cachedTokenKey,
-          [ATTR_MARK]: cachedStyleId,
-        }}
-        dangerouslySetInnerHTML={{ __html: cachedStyleStr }}
-      />
-    );
+          {...{
+            [ATTR_TOKEN]: cachedTokenKey,
+            [ATTR_MARK]: cachedStyleId,
+          }}
+          dangerouslySetInnerHTML={{ __html: cachedStyleStr }}
+        />
+      );
     }
 
     return (
